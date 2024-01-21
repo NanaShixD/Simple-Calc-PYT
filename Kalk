@@ -1,0 +1,12 @@
+def koszt_dojazdu(spalanie_na_100_km, dystans, cena_benzyny, liczba_osób):
+    koszt = (spalanie_na_100_km / 100) * dystans * cena_benzyny / liczba_osób
+    return koszt
+
+# Dane do wyliczenia 
+spalanie_na_100_km = 7.47
+dystans = 150
+cena_benzyny = 6.79
+liczba_osób = 3
+
+koszt_całkowity = koszt_dojazdu(spalanie_na_100_km, dystans, cena_benzyny, liczba_osób)
+print(f"koszt dojazdu dla jednej osoby: {koszt_całkowity:.2f} Złociszy")
